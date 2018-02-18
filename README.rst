@@ -22,20 +22,12 @@ The fortran version of the example can be configured and built with CMake::
 Running the example
 ===================
 
-Fortran version::
+The example may be executed with the following commands::
 
   cd ./src/fortran/
-  ./stokes_dynamic
+  ./stokes_dynamic_fortran
 
-Python version::
-
-  source  <path-to-opencmiss>/install/.../.../virtualenvironments/oclibs_pyXY_release/bin/activate
-  cd ./src/python/
-  python stokes_dynamic.py
-
-where the XY in the path are the Python major and minor versions respectively.
-
-The results can be visualised by running `visualiseStokesDynamic.com <./src/fortran/visualiseStokesDynamic.com>`_ with the `Cmgui visualiser <http://physiomeproject.org/software/opencmiss/cmgui/download>`_.
+The results can be visualised by running `visualiseStokesDynamic.cmgui <./src/fortran/visualiseStokesDynamic.cmgui>`_ with the `Cmgui visualiser <http://physiomeproject.org/software/opencmiss/cmgui/download>`_.
 
 
 Prerequisites
