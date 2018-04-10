@@ -108,6 +108,7 @@ PROGRAM stokes_dynamic
 
   TYPE(cmfe_RegionType) :: Region
   TYPE(cmfe_RegionType) :: WorldRegion
+  TYPE(cmfe_ComputationEnvironmentType) :: computationEnvironment
   TYPE(cmfe_CoordinateSystemType) :: CoordinateSystem
   TYPE(cmfe_CoordinateSystemType) :: WorldCoordinateSystem
   TYPE(cmfe_BasisType) :: BasisGeometry
@@ -155,8 +156,9 @@ PROGRAM stokes_dynamic
   !CHECK COMPUTATIONAL NODE
 
   !Get the computational nodes information
-  CALL cmfe_ComputationalNumberOfNodesGet(NumberOfComputationalNodes,Err)
-  CALL cmfe_ComputationalNodeNumberGet(ComputationalNodeNumber,Err)
+  CALL cmfe_ComputationEnvironment_Initialise(computationEnvironment,err)
+  CALL cmfe_ComputationEnvironment_NumberOfWorldNodesGet(computationEnvironment,numberOfComputationalNodes,err)
+  CALL cmfe_ComputationEnvironment_WorldNodeNumberGet(computationEnvironment,computationalNodeNumber,err)
 
   !
   !================================================================================================================================
