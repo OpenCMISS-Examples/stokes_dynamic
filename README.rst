@@ -1,42 +1,42 @@
+==============
+Stokes Dynamic
+==============
 
+Stokes equation is a linearised form of the Navier-Stokes equations in the limit of small Reynolds number.
+This equation, also named creeping flow, is a type of fluid flow where advective inertial forces are small compared with viscous forces.
+The dynamic form of the Stokes equation is implemented in this example.
 
-=================
-Example Name Here
-=================
-
-Short synopsis of the example.
 
 Building the example
 ====================
 
-If this not a pure Python example place the instructions here on how to configure and build with CMake::
+The fortran version of the example can be configured and built with CMake::
 
-  git clone https://github.com/you/your-example.git # maybe your example is somewhere else like: OpenCMISS-Examples
-  mkdir build
-  cmake -DOpenCMISSLibs_DIR=/path/to/opencmisslib/install ../your-example
-  make  # cmake --build . will also work here and is much more platform agnostic.
+  git clone https://github.com/OpenCMISS-Examples/stokes_dynamic.git
+  mkdir stokes_dynamic-build
+  cd stokes_dynamic-build
+  cmake -DOpenCMISSLibs_DIR=~/opencmiss/install/  ../stokes_dynamic/
+  make
+
 
 Running the example
 ===================
 
-Explain how the example is run::
+The example may be executed with the following commands::
 
-  cd build
-  ./src/fortran/XXXXXXXX
+  cd ./src/fortran/
+  ./stokes_dynamic_fortran
 
-or maybe it is a Python only example::
+The results can be visualised by running `visualiseStokesDynamic.cmgui <./src/fortran/visualiseStokesDynamic.cmgui>`_ with the `Cmgui visualiser <http://physiomeproject.org/software/opencmiss/cmgui/download>`_.
 
-  source /path/to/opencmisslibs/install/virtaul_environments/oclibs_venv_pyXY_release/bin/activate
-  python src/python/XXXXXXXX.py
-
-where the XY in the path are the Python major and minor versions respectively.
 
 Prerequisites
 =============
 
-Are there any external sources that are required over and above CMake, OpenCMISS libraries.  Sources like meshes which might be stored outside of the example itself.
+There are no additional input files required for this example as it is self-contained.
+
 
 License
 =======
 
-A line on the license applicable to this example.
+License applicable to this example is described in `LICENSE <./LICENSE>`_.

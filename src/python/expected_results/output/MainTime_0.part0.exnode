@@ -11,7 +11,7 @@
    1.  Value index= 6, #Derivatives= 0
    2.  Value index= 7, #Derivatives= 0
    3.  Value index= 8, #Derivatives= 0
- 4) Materials, field,  rectangular cartesian, #Components=2
+ 4) Material, field,  rectangular cartesian, #Components=2
    1.  Value index= 9, #Derivatives= 0
    2.  Value index= 10, #Derivatives= 0
  Node:            1
