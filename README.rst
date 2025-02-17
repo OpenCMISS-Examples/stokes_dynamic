@@ -12,8 +12,10 @@ Building the example
 If this not a pure Python example place the instructions here on how to configure and build with CMake::
 
   git clone https://github.com/you/your-example.git # maybe your example is somewhere else like: OpenCMISS-Examples
+  cd your-example
   mkdir build
-  cmake -DOpenCMISSLibs_DIR=/path/to/opencmisslib/install ../your-example
+  cd build
+  cmake -DOpenCMISS_INSTALL_ROOT=/path/to/opencmiss/install ../.
   make  # cmake --build . will also work here and is much more platform agnostic.
 
 Running the example
